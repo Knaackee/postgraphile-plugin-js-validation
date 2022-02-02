@@ -7,8 +7,9 @@ Postgraphile Plugin that allows mutation validation before hitting the database.
 ## Table of Contents
 - [Introduction](#introduction)
 - [Install](#install)
-- [Basic Usage](#basic-usage)
-- [Usage With Yup](#usage-with-yup)
+- [Examples](#exapmles)
+  - [Basic Usage](#basic-usage)
+  - [Usage With Yup](#usage-with-yup)
 - [API Reference](/docs/modules.md)
 
  
@@ -26,7 +27,13 @@ or
 yarn add postgraphile-plugin-js-validation
 ```
 
-## Basic Usage
+## Examples
+
+In our example we already have a mutation called `authUser`.
+
+TODO
+
+### Basic Usage
 
 
 
@@ -53,7 +60,7 @@ postgraphile(process.env.DATABASE_URL, schemaName, {
 })
 ```
 
-## Usage With Yup
+### Usage With Yup
 
 ```javascript
 import { ValidationPlugin, handleErrors } from "postgraphile-plugin-js-validation";
