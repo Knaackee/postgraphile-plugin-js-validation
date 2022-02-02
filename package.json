@@ -1,11 +1,12 @@
 {
   "name": "postgraphile-plugin-js-validation",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Validate Mutations with JavaScript before hitting the database",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && tsc -b",
-    "docs": "typedoc src/index.ts --hideInPageTOC --hideBreadcrumbs --plugin typedoc-plugin-markdown --out docs"
+    "postbuild": "npm run docs",
+    "docs": "rimraf docs && typedoc src/index.ts --hideInPageTOC --hideBreadcrumbs --plugin typedoc-plugin-markdown --out docs"
   },
   "license": "MIT",
   "repository": {

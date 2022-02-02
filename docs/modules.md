@@ -12,7 +12,7 @@
 
 #### Defined in
 
-[Error.ts:1](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/270ee37/src/Error.ts#L1)
+[Error.ts:1](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/94d1f80/src/Error.ts#L1)
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 #### Defined in
 
-[ValidationPlugin.ts:14](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/270ee37/src/ValidationPlugin.ts#L14)
+[ValidationPlugin.ts:14](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/94d1f80/src/ValidationPlugin.ts#L14)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[ResolverInfo.ts:3](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/270ee37/src/ResolverInfo.ts#L3)
+[ResolverInfo.ts:3](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/94d1f80/src/ResolverInfo.ts#L3)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[Validator.ts:4](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/270ee37/src/Validator.ts#L4)
+[Validator.ts:4](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/94d1f80/src/Validator.ts#L4)
 
 ## Functions
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[ValidationPlugin.ts:25](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/270ee37/src/ValidationPlugin.ts#L25)
+[ValidationPlugin.ts:25](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/94d1f80/src/ValidationPlugin.ts#L25)
 
 ___
 
@@ -150,4 +150,4 @@ handleErrors
 
 #### Defined in
 
-[handleErrors.ts:14](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/270ee37/src/handleErrors.ts#L14)
+[handleErrors.ts:14](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/94d1f80/src/handleErrors.ts#L14)
