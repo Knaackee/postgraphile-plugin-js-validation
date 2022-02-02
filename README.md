@@ -5,21 +5,15 @@ Postgraphile Plugin that allows mutation validation before hitting the database.
 > ⚠️ Don't see this Plugin as an excuse to skip defining proper constraints in your database.
 
 ## Table of Contents
-- [postgraphile-plugin-js-validation](#postgraphile-plugin-js-validation)
-	- [Table of Contents](#table-of-contents)
-	- [Introduction](#introduction)
-	- [## Basic Usage](#-basic-usage)
-	- [Usage With Yup](#usage-with-yup)
+- [Introduction](#introduction)
+- [Basic Usage](#basic-usage)
+- [Usage With Yup](#usage-with-yup)
+- [API Reference](/docs/modules.md)
 
 
 
 ## Introduction
-This library contains 3 things you may find useful.
-1. ValidationPlugin
-2. handleErrors
-3. YupValidator
-
-Learn more about them: API Reference (Link)
+TODO
 
 ## Basic Usage
 ---
