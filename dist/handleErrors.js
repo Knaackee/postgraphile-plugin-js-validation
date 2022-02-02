@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.handleErrors = void 0;
 const formatErrors_1 = require("./formatErrors");
 const handleErrors = (style = "default", defaultHandler = (error) => error) => {
-    return (errors) => {
+    return (errors, _req, _res) => {
         return errors.map((error) => {
             const isFromValidationPlugin = error.message.startsWith("ValidationError(");
             if (isFromValidationPlugin) {

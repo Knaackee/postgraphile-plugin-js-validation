@@ -4,13 +4,16 @@ import { Validator } from "./Validator";
 import { ResolverInfo } from ".";
 
 export const YupValidator = <TInput, TSource, TContext, TArgs>(
-  getSchema: (info: ResolverInfo<TSource, TContext, TArgs>) => SchemaLike,
+  getSchema: (
+    info: ResolverInfo<TSource, TContext, TArgs>
+  ) => Promise<SchemaLike>,
   options?: ValidateOptions<AnyObject>
 ): Validator<TInput, TSource, TContext, TArgs> => {
   return async (input, info) => {
-    const schema = getSchema(info);
     try {
       // validate the input using the schema
+      const schema = await getSchema(info);
+      console.log("-------------------------------------");
       await schema.validate(input, options);
     } catch (validationResult: any) {
       const validationError = validationResult as ValidationError;

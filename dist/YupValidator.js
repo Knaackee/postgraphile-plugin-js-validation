@@ -12,9 +12,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.YupValidator = void 0;
 const YupValidator = (getSchema, options) => {
     return (input, info) => __awaiter(void 0, void 0, void 0, function* () {
-        const schema = getSchema(info);
         try {
             // validate the input using the schema
+            const schema = yield getSchema(info);
+            console.log("-------------------------------------");
             yield schema.validate(input, options);
         }
         catch (validationResult) {

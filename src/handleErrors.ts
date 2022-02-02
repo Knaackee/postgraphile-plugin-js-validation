@@ -1,12 +1,17 @@
-import { GraphQLFormattedErrorExtended } from "postgraphile";
 import { formatErrors } from "./formatErrors";
+import { GraphQLError } from "graphql";
+import { IncomingMessage } from "http";
+import { ServerResponse } from "http";
 
 export const handleErrors = (
   style: "default" | "shape" = "default",
-  defaultHandler: (error: GraphQLFormattedErrorExtended) => {} = (error) =>
-    error
+  defaultHandler: (error: GraphQLError) => GraphQLError = (error) => error
 ) => {
-  return (errors: Array<GraphQLFormattedErrorExtended>) => {
+  return (
+    errors: readonly GraphQLError[],
+    _req: IncomingMessage,
+    _res: ServerResponse
+  ): Array<GraphQLError> => {
     return errors.map((error) => {
       const isFromValidationPlugin =
         error.message.startsWith("ValidationError(");
@@ -19,7 +24,7 @@ export const handleErrors = (
               : Object.keys(content).map((error) =>
                   formatErrors(error, content[error])
                 ),
-        };
+        } as any;
       }
       return defaultHandler(error);
     });

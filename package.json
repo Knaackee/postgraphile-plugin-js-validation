@@ -4,8 +4,7 @@
   "description": "Validate Mutations with JavaScript before hitting the database",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rimraf dist && tsc -b",
-    "publish": "npm publish"
+    "build": "rimraf dist && tsc -b"
   },
   "license": "MIT",
   "repository": {
