@@ -7,7 +7,7 @@ Postgraphile Plugin that allows mutation validation before hitting the database.
 ## Table of Contents
 - [Introduction](#introduction)
 - [Install](#install)
-- [Examples](#exapmles)
+- [Examples](#examples)
   - [Basic Usage](#basic-usage)
   - [Usage With Yup](#usage-with-yup)
 - [API Reference](/docs/modules.md)
