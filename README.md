@@ -100,4 +100,4 @@ And here is how the result looks like.
 
 
 
-[API Reference](tree/main/docs/index.html)
+[API Reference](/docs/index.html)
