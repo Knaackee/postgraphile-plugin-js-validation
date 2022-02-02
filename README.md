@@ -5,11 +5,10 @@ Postgraphile Plugin that allows mutation validation before hitting the database.
 > ⚠️ Don't see this Plugin as an excuse to skip defining proper constraints in your database.
 
 ## Table of Contents
-- Introduction
-- Basic Usage
-- Usage With Yup
-- API Reference
-- How To Contribute?
+- [Introduction](#introduction)
+- [Basic Usage](#basic-usage)
+- [Usage With Yup](#usage-with-yup)
+- [API Reference](/docs/modules.md)
 
 ---
 
@@ -100,4 +99,3 @@ And here is how the result looks like.
 
 
 
-[API Reference](/docs/modules.md)
