@@ -4,7 +4,8 @@
   "description": "Validate Mutations with JavaScript before hitting the database",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rimraf dist && tsc -b"
+    "build": "rimraf dist && tsc -b",
+    "docs": "typedoc src/index.ts --out docs --excludeExternals"
   },
   "license": "MIT",
   "repository": {
@@ -18,6 +19,7 @@
   "devDependencies": {
     "@types/yup": "^0.29.13",
     "rimraf": "^3.0.2",
+    "typedoc": "^0.22.11",
     "typescript": "^4.5.5"
   },
   "peerDependencies": {

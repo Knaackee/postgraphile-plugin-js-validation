@@ -3,10 +3,18 @@ import { GraphQLError } from "graphql";
 import { IncomingMessage } from "http";
 import { ServerResponse } from "http";
 
-export const handleErrors = (
+/**
+ * handleErrors
+ *
+ * @export
+ * @param {("default" | "shape")} [style="default"]
+ * @param {(error: GraphQLError) => GraphQLError} [defaultHandler=(error) => error]
+ * @return {*}
+ */
+export function handleErrors(
   style: "default" | "shape" = "default",
   defaultHandler: (error: GraphQLError) => GraphQLError = (error) => error
-) => {
+) {
   return (
     errors: readonly GraphQLError[],
     _req: IncomingMessage,
@@ -29,4 +37,4 @@ export const handleErrors = (
       return defaultHandler(error);
     });
   };
-};
+}

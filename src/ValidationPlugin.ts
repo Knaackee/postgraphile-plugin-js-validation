@@ -1,14 +1,25 @@
 import { makeWrapResolversPlugin } from "postgraphile";
 import { Validator } from "./Validator";
 
-export const ValidationPlugin = (
+/**
+ * ValidationPlugin
+ *
+ * @export
+ * @param {{ [key: string]: Validator<any, any, any, any> }} mutations
+ * @param {{
+ *     inputFieldName: string;
+ *   }} [options={
+ *     inputFieldName: "input",
+ *   }]
+ */
+export function ValidationPlugin(
   mutations: { [key: string]: Validator<any, any, any, any> },
   options: {
     inputFieldName: string;
   } = {
     inputFieldName: "input",
   }
-) =>
+) {
   makeWrapResolversPlugin(
     (context) => {
       if (context.scope.isRootMutation) {
@@ -45,3 +56,4 @@ export const ValidationPlugin = (
         return resolver(source, args, context, resolveInfo);
       }
   );
+}

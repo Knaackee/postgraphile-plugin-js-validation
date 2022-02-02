@@ -11,6 +11,7 @@ Postgraphile Plugin that allows mutation validation before hitting the database.
 - API Reference
 - How To Contribute?
 
+---
 
 ## Introduction
 This library contains 3 things you may find useful.
@@ -21,6 +22,7 @@ This library contains 3 things you may find useful.
 Learn more about them: API Reference (Link)
 
 ## Basic Usage
+---
 
 ```
 npm install postgraphile-plugin-js-validation
@@ -54,6 +56,7 @@ postgraphile(process.env.DATABASE_URL, schemaName, {
 ```
 
 ## Usage With Yup
+---
 ```javascript
 import { ValidationPlugin, handleErrors } from "postgraphile-plugin-js-validation";
 import { YupValidator } from "postgraphile-plugin-js-validation/dist/YupValidator";
@@ -95,10 +98,6 @@ And here is how the result looks like.
 }
 ```
 
-## API Reference (Comming soon...)
-`ValidationPlugin`
 
-`handleErrors`
 
-`YupValidator`
-
+[API Reference](tree/main/docs/index.html)

@@ -3,12 +3,26 @@ import { ValidationError } from "yup";
 import { Validator } from "./Validator";
 import { ResolverInfo } from ".";
 
-export const YupValidator = <TInput, TSource, TContext, TArgs>(
+/**
+ * YupValidator
+ *
+ * @export
+ * @template TInput
+ * @template TSource
+ * @template TContext
+ * @template TArgs
+ * @param {(
+ *     info: ResolverInfo<TSource, TContext, TArgs>
+ *   ) => Promise<SchemaLike>} getSchema
+ * @param {ValidateOptions<AnyObject>} [options]
+ * @return {*}  {Validator<TInput, TSource, TContext, TArgs>}
+ */
+export function YupValidator<TInput, TSource, TContext, TArgs>(
   getSchema: (
     info: ResolverInfo<TSource, TContext, TArgs>
   ) => Promise<SchemaLike>,
   options?: ValidateOptions<AnyObject>
-): Validator<TInput, TSource, TContext, TArgs> => {
+): Validator<TInput, TSource, TContext, TArgs> {
   return async (input, info) => {
     try {
       // validate the input using the schema
@@ -33,4 +47,4 @@ export const YupValidator = <TInput, TSource, TContext, TArgs>(
     }
     return {};
   };
-};
+}
