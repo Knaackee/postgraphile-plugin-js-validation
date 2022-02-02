@@ -11,7 +11,7 @@ Postgraphile Plugin that allows mutation validation before hitting the database.
 - [Usage With Yup](#usage-with-yup)
 - [API Reference](/docs/modules.md)
 
-
+ 
 
 ## Introduction
 TODO
@@ -27,7 +27,6 @@ yarn add postgraphile-plugin-js-validation
 ```
 
 ## Basic Usage
----
 
 
 
