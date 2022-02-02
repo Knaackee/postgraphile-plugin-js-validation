@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && tsc -b",
-    "docs": "typedoc src/index.ts --hideInPageTOC --hideBreadcrumbs --plugin typedoc-plugin-markdown --out docs --excludeExternals"
+    "docs": "typedoc src/index.ts --hideInPageTOC --hideBreadcrumbs --plugin typedoc-plugin-markdown --out docs"
   },
   "license": "MIT",
   "repository": {

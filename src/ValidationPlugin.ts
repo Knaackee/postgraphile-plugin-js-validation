@@ -2,21 +2,29 @@ import { makeWrapResolversPlugin } from "postgraphile";
 import { Validator } from "./Validator";
 
 /**
- * ValidationPlugin
+ * Options
+ *
+ * @export
+ * @interface Options
+ */
+export interface Options {
+  inputFieldName: string;
+}
+
+export type MutationsMap = { [key: string]: Validator<any, any, any, any> };
+
+/**
+ *
  *
  * @export
  * @param {{ [key: string]: Validator<any, any, any, any> }} mutations
- * @param {{
- *     inputFieldName: string;
- *   }} [options={
+ * @param {Options} [options={
  *     inputFieldName: "input",
  *   }]
  */
 export function ValidationPlugin(
-  mutations: { [key: string]: Validator<any, any, any, any> },
-  options: {
-    inputFieldName: string;
-  } = {
+  mutations: MutationsMap,
+  options: Options = {
     inputFieldName: "input",
   }
 ) {

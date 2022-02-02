@@ -1,5 +1,9 @@
 # postgraphile-plugin-js-validation
 
+## Interfaces
+
+- [Options](interfaces/Options.md)
+
 ## Type aliases
 
 ### Error
@@ -8,7 +12,21 @@
 
 #### Defined in
 
-[Error.ts:1](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/3460fd7/src/Error.ts#L1)
+[Error.ts:1](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/270ee37/src/Error.ts#L1)
+
+___
+
+### MutationsMap
+
+Ƭ **MutationsMap**: `Object`
+
+#### Index signature
+
+▪ [key: `string`]: [`Validator`](modules.md#validator)<`any`, `any`, `any`, `any`\>
+
+#### Defined in
+
+[ValidationPlugin.ts:14](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/270ee37/src/ValidationPlugin.ts#L14)
 
 ___
 
@@ -36,7 +54,7 @@ ___
 
 #### Defined in
 
-[ResolverInfo.ts:3](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/3460fd7/src/ResolverInfo.ts#L3)
+[ResolverInfo.ts:3](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/270ee37/src/ResolverInfo.ts#L3)
 
 ___
 
@@ -70,7 +88,7 @@ ___
 
 #### Defined in
 
-[Validator.ts:4](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/3460fd7/src/Validator.ts#L4)
+[Validator.ts:4](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/270ee37/src/Validator.ts#L4)
 
 ## Functions
 
@@ -78,17 +96,14 @@ ___
 
 ▸ **ValidationPlugin**(`mutations`, `options?`): `void`
 
-ValidationPlugin
-
 **`export`**
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `mutations` | `Object` |
-| `options` | `Object` |
-| `options.inputFieldName` | `string` |
+| `mutations` | [`MutationsMap`](modules.md#mutationsmap) |
+| `options` | [`Options`](interfaces/Options.md) |
 
 #### Returns
 
@@ -96,7 +111,7 @@ ValidationPlugin
 
 #### Defined in
 
-[ValidationPlugin.ts:15](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/3460fd7/src/ValidationPlugin.ts#L15)
+[ValidationPlugin.ts:25](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/270ee37/src/ValidationPlugin.ts#L25)
 
 ___
 
@@ -135,4 +150,4 @@ handleErrors
 
 #### Defined in
 
-[handleErrors.ts:14](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/3460fd7/src/handleErrors.ts#L14)
+[handleErrors.ts:14](https://github.com/Knaackee/postgraphile-plugin-js-validation/blob/270ee37/src/handleErrors.ts#L14)
