@@ -2,7 +2,7 @@
   "name": "postgraphile-plugin-js-validation",
   "version": "0.1.0",
   "description": "Validate Mutations with JavaScript before hitting the database",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && tsc -b",
     "publish": "npm publish"
