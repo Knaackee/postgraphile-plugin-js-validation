@@ -21,6 +21,15 @@ This library contains 3 things you may find useful.
 Learn more about them: API Reference (Link)
 
 ## Basic Usage
+
+```
+npm install postgraphile-plugin-js-validation
+
+or 
+
+yarn add postgraphile-plugin-js-validation
+```
+
 ```javascript
 // import
 import { ValidationPlugin, handleErrors } from "postgraphile-plugin-js-validation";
