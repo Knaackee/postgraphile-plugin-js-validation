@@ -1,6 +1,6 @@
 {
   "name": "postgraphile-plugin-js-validation",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Validate Mutations with JavaScript before hitting the database",
   "main": "dist/index.js",
   "scripts": {
