@@ -98,6 +98,4 @@ And here is how the result looks like.
 }
 ```
 
-
-
-[API Reference](/docs/modules.md)
+[API Reference](/docs/index.html)
